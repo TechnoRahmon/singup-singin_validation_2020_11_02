@@ -1,0 +1,37 @@
+
+if(user.length > 0 )
+  doctype html
+  head
+    title IT SOLUTION V.02
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    link(rel='stylesheet' href='/stylesheets/style.css')
+  // ---------header -------------
+  header.index-header
+    // NAv Bar
+    ul.nav
+      li.logo
+        // the logo
+        a(href='/')
+          img(src='/images/logo.png' alt='logo' height='70px' width='70px')
+          span TECHNO
+          |  IT Solution
+      li
+        a(href='#Contact') CONTACT
+      li
+        a(href='#About') ABOUT
+      li
+        a(href='#Blog') BLOG
+      li
+        a(href='#Projects') PROJECTS
+      li
+        a(href='/') HOME
+    // end of NAv Bar
+    .title-box
+      #msg
+
+          h2 Welcome #{user[0].f_name} to your profile !
+else
+         h2 Not allowed access !!
+// ---------end header -------------
+  script.
+

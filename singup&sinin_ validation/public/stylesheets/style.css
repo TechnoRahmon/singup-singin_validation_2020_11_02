@@ -1,0 +1,917 @@
+
+/*****************************Common styles for all ***************************************/
+
+
+
+
+
+
+            *{
+                box-sizing: border-box;
+                margin: 0;
+                padding:0;
+                
+            }
+
+
+            body{
+                font-size: 1em;
+                font-family: Tahoma, sans-serif;
+                height: auto;
+                position: relative;
+                width: 100%;
+                margin:0 auto;
+                
+            
+            }
+
+
+
+
+       
+
+
+     
+
+
+
+
+/***************************** End of Common styles for all ***************************************/
+
+
+                /***************************** nav style***********************/
+
+                .nav{
+                    width:100%;   
+                  
+                    font-size: 100%;
+                   
+                   align-content: center;
+                   position: fixed;
+                   background-color:transparent;
+                   height: 80px;
+                   padding-right: 2%;
+                   z-index: 2;
+                   top:0px;
+                   
+                }
+                
+                .nav li{ 
+                     
+                    padding :20px 20px 15px 20px;
+                    margin:20px 25px 5px 30px;
+                    float :right;
+                    display: inline-block;
+                    position: relative;
+                    
+                
+                }
+                
+                .nav li a{ 
+                    text-decoration: none;
+                    color : white;
+                    
+                }
+                
+                .nav li:hover{ 
+                    border-bottom:2px solid #1c9e75;
+                    transition: color 0.2s ease-in;
+                     
+                 }
+                
+             
+
+
+
+                .nav .logo:hover {
+                     border :none;
+                 }
+                .nav .logo{
+                
+                
+                    position: relative;
+                    float: left;
+                    height: 70px;
+                    overflow: hidden;
+                    margin-left :5%;
+                    margin-top:10px;
+                    font-size: 160%;
+                    transition: margin 1s ease-in;
+                }
+                .logo span{
+                    color:#1c9e75;
+                }
+    
+                .logo img{
+                    vertical-align: middle;
+                    max-width:100%;
+                    margin-top:-25px;
+    
+                }
+    
+
+
+                   
+                /*  scrolled nav  */
+
+                .scrolled{
+                    background-color:#25272cee;
+                    transition: background-color 200ms linear;
+                    
+                }
+
+
+
+
+/*****************************the end  nav ******************/
+
+
+
+
+
+
+
+
+/***************************** footer style***********************/
+
+                footer {
+
+
+                    background-color: #12151dee;
+                    color: white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                  
+                }
+
+
+
+                #footer-section {
+                    display: grid;
+                    grid-template-columns:repeat(4, 1fr);
+                    grid-template-rows: 1fr 1fr;
+                    row-gap: 0.5em;  
+                    justify-content: center;
+                    align-items: center;
+                    margin: 5em 0em;
+
+                    grid-template-areas:
+                    ". . . ."
+                    "copy copy copy copy";
+                    text-align: center;
+                    transition: margin 0.8s ease-in;
+                }
+
+                .copy-right {
+                    grid-area: copy;
+                    padding: 1em;
+                    width:20em;
+                }
+
+                .contact-part {
+                    font-size: 1.8em;
+                }
+
+               .a-icon {
+                   color: white;
+               }
+
+
+
+                /*****************************the end  footer ******************/
+
+
+
+
+
+
+
+/*****************************the end  common style*******************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***************************** index page***************************************/
+
+    /* headr */
+
+    
+        
+    .loginLink{
+        color:white;
+        font-size: 120%;
+        text-decoration: none;
+        margin:30px 0px 0px 0px; 
+        display: block;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    .loginLink:hover{
+        color:#006948;
+    }
+
+    .index-header { 
+            max-width:100%;
+            overflow: hidden;
+            position: relative;
+            padding : 0px 0;
+            
+            background: rgb(240, 240, 240);
+            height:110vh;
+            background-image: linear-gradient(#0f0f0f8a, #1f1f1f91),url('/images/wallpaper.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+       
+
+        #msg{
+            margin:40px;
+                        
+        }
+        .title-box{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width:100;
+            z-index: 1;
+            color:#fff;
+            text-align: center;
+            font-size: 120%;
+            background-color: #313131d2;
+            width: 40%;
+            margin-top:60px;
+        }
+      
+       
+        .title-box h1{
+            
+            width:100%;
+            margin-bottom:40px;
+            margin-top:40px;
+            font-family: 'Spectral', serif;
+            font-weight: 400;
+            font-size: 260%;
+            
+        }
+    
+        .title-box p{
+            font-family: 'Spectral', serif;
+            font-size: 130%;
+            font-weight: bold;
+        }
+
+
+        .btn-explore{
+            color:#ffffff; 
+            text-decoration: none;
+            background-color:#1C9E75;
+            padding:15px 30px;
+            border-radius: 6px;
+            font-size: 110%;
+            font-weight: 300;
+            text-align: center;
+        }
+        .btn-explore::before{
+            content: '\229A';
+            font-size: 120%;
+            position: relative;
+            left: -8px;
+            
+        }
+
+        .btn-explore:hover{ 
+            color:#2b2b2b;
+        }
+/* ************  featuer section *******************/
+
+         .feauture_section{
+             display: flex;
+             justify-content: space-around;
+             padding: 60px 0px;
+         }
+
+
+        .errMsg{
+            color :#ff4220;
+            margin :20px 0px 20px 0px ; 
+        }
+
+
+        .box{
+            padding: 40px;
+            margin: 0px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #2b2b2b;
+        }
+        
+
+        
+        .big_icon{
+            display: block; 
+            font-size: 220%;
+            color:#ffffff;
+            margin-bottom: 20px;
+            background-color: #1C9E75;
+            height: 85px;
+            width: 85px;
+            border-radius: 70px;
+            padding: 25px;
+            text-align: center;
+        }
+
+
+        .box_text{
+            margin-top: 35px;
+            font-size: 100%;
+            font-weight: 300;
+            word-spacing: 1px;
+            line-height: 1.5;
+            
+                
+        }
+
+        .feauture_section h3{
+            font-weight: 500;
+            margin-top:10px;
+            font-size: 125%;
+            
+            
+        }
+        
+
+
+        
+        /* about section */
+        
+
+
+        .contact-section,.blog-section,.about-section{ 
+            display: flex;
+            width:100%;
+            
+        }
+
+
+
+
+        /*  comman line for both about and blog sections */
+        .box-img{ 
+            display: block;
+            background-image: url(img/aboutImg.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: auto;
+            width: 50%;
+            
+            float: left;
+        }
+
+
+        .box-txt{
+            width:50%;
+            padding: 35px;
+            color:  #ffffff;
+            line-height: 2;
+            float:right; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #1c9e75;
+        }
+
+        .box-txt h1{ 
+                font-size: 350%;
+                font-weight: 500;
+                margin-top:15xp;
+        }
+        .box-txt p{ 
+            font-size: 120%;
+            line-height: 1.6;
+            
+        }
+
+        .box-txt a{
+            margin-top :25px;
+            width:18%;
+            padding:5px 0px;
+            text-align: center;
+            border:1px solid white;
+        }
+
+        .box-txt a::before{
+            content: '';
+        }
+
+        /* index/ blog section */
+
+        .blog-section .box-img{
+            background: url(img/blogHeader.jpg);
+            background-position: center;
+        }
+
+        /* Projects section */
+
+
+
+        .Projects-section{
+            display: flex;
+            flex-direction: column;
+            margin:50px 0px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .proj-text-box { 
+                color:#3a3a3a;
+                font-size: 140%;
+                margin-bottom: 20px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                
+        }    
+        
+        .proj-text-box h3{ 
+            
+            
+            margin:30px 0px;
+        }
+        .proj-text-box h1{ 
+            
+            font-size: 260%;
+            font-weight: 300;
+            margin-bottom:40px;
+        }
+        .gallery-box{
+            display: grid;
+            grid-template-columns:repeat(4, 1fr) ;
+            gap: 10px;
+            width:100%;
+            padding:40px;
+            transition: grid-template-columns 1s ease-in;
+            
+        }
+        .gallery-box img{
+            width:100%;
+
+        }
+
+
+
+
+        /* Our Team section */
+
+        .OurTeam-section{ 
+
+            display: flex;
+            padding:60px 40px;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            color:#2b2b2b;
+            font-size: 120%;
+            height: auto;
+            text-align: center;
+            
+        }
+
+
+
+        .OurTeam-section h2{ 
+            font-size: 200%;
+            font-weight: 300;
+            margin-bottom:40px;
+        }
+        /* .OurTeam-section p{ 
+        margin-bottom:70px;
+        } */
+
+
+        .OurTeam-img-box{ 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            width: 100%;
+            text-align: center;
+        }
+        .img-box{ 
+            
+            transition: width 1.2s ease-in;
+            flex:1;
+            padding:20px;
+
+        }
+
+        .img-box img{
+            width:400px;
+            height: auto;
+            max-width: 100%;
+            margin-bottom:10px;
+        }
+
+        .OurTeam-img-box h3{
+           
+           
+            margin-bottom:15px;
+        }
+
+
+
+
+
+        /* Contact section */
+
+
+
+        .contact-section{
+            
+            
+            width:100%;
+        }
+
+
+          .contact-section .box-img{
+            background: url(img/contact.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-size: cover;
+            
+        }
+
+       .contact-box{ 
+           background-color: rgb(238, 238, 238);
+           width:50%;
+           padding:60px;
+           color:#2b2b2b;
+           display: flex;
+           justify-content: center;
+           flex-direction: column;
+       }
+
+       .contact-box h1{ 
+           font-size: 400%;
+           font-weight: 400;
+           margin-bottom:50px;
+           color:#3a3a3a;
+    
+       }
+
+       form{ 
+           display: flex;
+            flex-direction: column;
+            width:100%;
+            justify-content: center;  
+            align-content: center;              
+       }
+
+        input, form div{ 
+                width:70%;
+                height: 45px;
+                border:none; 
+                padding-left: 7px;
+                font-size: 120%;
+                color:#3a3a3a;
+                margin:15px auto;
+
+        }
+        input[type=text]:focus,input[type=email]:focus,input[type=password]:focus,input[type=date]:focus{
+            border-bottom: 1px solid #1C9E75;
+            background-color: #e8f1ee;
+        }
+        form div {
+            display: flex;
+            justify-content: space-around;
+            overflow: auto;
+            height: 80px;
+        }
+        select{
+            width:25%;
+            height: 45px;
+                border:none; 
+                padding-left: 7px;
+                font-size: 90%;
+                color:#3a3a3a;
+                text-align: center;
+                background-color: #ffffff;
+                min-height: 40px;
+               
+                overflow:scroll;
+        }
+         option{
+           height: 50px;
+            overflow: scroll;
+        }
+        select:focus{
+            outline: none;
+            border-bottom: 1px solid #1C9E75;
+            background-color: #e8f1ee;
+        }
+        
+        input[type=submit]{
+            background-color:#1c9e75;
+            color:#fff;
+            cursor: pointer;
+            margin-top:25px;
+            margin-bottom:40px;
+            height: 55px;
+        }
+
+        input[type=submit]:hover { 
+
+background-color: #0b9267;        }
+
+        input:focus{
+            outline: none;
+        }
+
+
+
+
+
+
+
+/*****************************the end index page*******************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***************************** blog page***************************************/
+
+.grid-blog {
+    display:  grid;
+    grid-template-columns: 1fr;
+    /*grid-template-areas: "blog-header" "blog-content" "footer"; */
+    grid-template-rows: 1fr 2fr 1fr;
+    line-height: 1.4;
+    letter-spacing: 2px;
+    height: 100vh;
+}
+
+
+.blog-header {
+
+   /* grid-area: blog-header; */
+    background-image: url("img/blogHeader.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+  
+}
+.blog-header h1 {
+    color: white;
+    font-size: 3em;
+    font-weight: lighter;
+}
+.blog-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+   /* grid-auto-rows:minmax(70vh ,auto) ; */
+}
+
+.blog-img1 {
+    background-image: url("img/blogImg1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 100%;
+}
+
+.blog-img2 {
+    background-image: url("img/blogImg2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 100%;
+
+}
+.blog-descr1 {
+    padding: 3em;
+    color: #818181;
+
+}
+
+.blog-title1 {
+
+    text-transform: uppercase;
+    margin-bottom: 2em;
+}
+.bloger {
+
+    margin-bottom: 3em;
+}
+.bloger-name {
+    font-weight: bold;
+}
+
+.readBtn {
+    background-color: #1c9e75;
+    width: 150px;
+    padding: 1.3em;
+    margin-top: 3em;
+    border: none;
+}
+.readBtn a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.4em;
+}
+
+.readBtn:hover {
+    background-color: #006948;
+}
+
+.blog-descr2 {
+    padding: 3em;
+    background-color: #818181;
+    color: aliceblue;
+}
+.blog-title2 {
+
+    text-transform: uppercase;
+    margin-bottom: 2em;
+}
+.bloger {
+
+    margin-bottom: 3em;
+}
+.bloger-name {
+    font-weight: bold;
+}
+/*****************************the end blog page*******************************/
+
+
+
+
+
+
+
+/***************************** post page***************************************/
+
+.wrapper-post{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr;
+    grid-template-areas: "post-header post-header"
+    "pst-area pst-area";
+    line-height: 1.4;
+    letter-spacing: 2px;
+}
+
+#post-header {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.658),rgba(0, 0, 0, 0.589)), url(img/post-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: post-header;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post {
+    color: white;
+    font-size: 5em;
+    font-weight: lighter;
+}
+.post-area {
+    grid-area: pst-area;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:1fr;
+    background-color:rgba(255, 255, 255, 0.555);
+    color: rgb(53, 53, 53);
+  
+}
+
+.post-section1, .post-section2, .post-section3 {
+      border-bottom: 1px groove gray;
+}
+/* Geneal styling for images */
+
+.posters {
+     width: 100%;
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+
+#poster1 {
+    background-image: url(img/post1.jpg);
+    height: 60vh;   
+}
+
+#poster2 {
+    background-image: url(img/post2.jpg);
+    height: 60vh;
+}
+#poster3 {
+    background-image: url(img/post3.jpg);
+    height: 60vh;
+}
+#poster4 {
+    background-image: url(img/post4.jpg);
+    height: 60vh;
+}
+
+.post-blog-title {
+    padding: 1em 1.5em;
+    text-transform: uppercase;
+}
+
+.post-data {
+    padding: 1em 1.5em;
+}
+
+.post-content {
+
+    padding: 1em 1.5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*****************************the end bost page*******************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,49 @@
+doctype html
+head
+  title IT SOLUTION V.02
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  link(rel='stylesheet' href='/stylesheets/style.css')
+// ---------header -------------
+header.index-header
+  // NAv Bar
+  ul.nav
+    li.logo
+      // the logo
+      a(href='/')
+        img(src='/images/logo.png' alt='logo' height='70px' width='70px')
+        span TECHNO
+        |  IT Solution
+    li
+      a(href='#Contact') CONTACT
+    li
+      a(href='#About') ABOUT
+    li
+      a(href='#Blog') BLOG
+    li
+      a(href='#Projects') PROJECTS
+    li
+      a(href='/') HOME
+  // end of NAv Bar
+  .title-box
+    form#form1(name='form1' action='/api/login' method='POST' autocomplete='off')
+        h1 LOGIN
+        if(errors.content)
+             each err in errors.content
+                 p.errMsg(style='display :'+errors.display)= err.msg
+        input#emial(type='email' name='email' placeholder='Email@info.com')
+        input#pass(type='password' name='password' placeholder='Password')
+
+        input#submit.btn-explore(type='submit' name='submit' value='login')
+// ---------end header -------------
+script.
+  
+    //- d = new Date()
+    //- //console.log(d.getFullYear())
+    //- var sel  = document.getElementById('years');
+    //- for (let i =d.getFullYear(); i > d.getFullYear()-15 ; i--){
+    //-   var opt  = document.createElement('option');
+    //-   opt.appendChild(document.createTextNode('1995'));
+    //-   opt.value = '1995'
+    //-   sel.appendChild(opt)
+    //- }
+ 
